@@ -27,7 +27,7 @@ class CryptopiaCrawler extends Crawler{
     }
 
     // 与白名单做交集
-    val whiteList = Source.fromFile("src/whitelist.dat").getLines().toSet
+    val whiteList = Source.fromFile("whitelist.dat").getLines().toSet
 
     symbols.toSet & whiteList
   }

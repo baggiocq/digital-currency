@@ -15,7 +15,7 @@ object PropertiesKeys {
 
 object PropertiesUtil {
   val prop = new Properties()
-  prop.load(new FileInputStream("src/config.properties"))
+  prop.load(new FileInputStream("config.properties"))
 
   def get(key: String): String = {
     prop.getProperty(key)
