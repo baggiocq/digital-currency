@@ -13,8 +13,6 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class CurrenciesResponse extends CryptopiaBaseResponse {
     @Getter
     @Setter
