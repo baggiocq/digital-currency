@@ -14,7 +14,7 @@ import scala.io.Source
   */
 class OKEXCrawler extends Crawler {
   override def getAllCurrenciesSymbols(): Set[String] = {
-    Source.fromFile("src/okex_allcoins.dat").getLines().toSet
+    Source.fromFile("okex_allcoins.dat").getLines().toSet
   }
 
   override def getCurrencyDetailModel(symbol: String, baseSymbol: String = "BTC"): CurrencieyDetailModel = {
